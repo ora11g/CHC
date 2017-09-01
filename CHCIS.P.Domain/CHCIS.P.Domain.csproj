@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5DDD45C8-4611-4297-9BC7-C6C50FDD0139}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CHCIS.P</RootNamespace>
+    <AssemblyName>CHCIS.P.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\CHCIS.P\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Serialize.Linq, Version=1.2.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Serialize.Linq.1.2.4\lib\net45\Serialize.Linq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xx.His.Infrastructure, Version=17.4.16.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xx.His.Infrastructure.17.4.16\lib\net45\Xx.His.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Domain\BsCountry.cs" />
+    <Compile Include="Domain\BsDocLevel.cs" />
+    <Compile Include="Domain\BsDoctor.cs" />
+    <Compile Include="Domain\BsFrequency.cs" />
+    <Compile Include="Domain\BsItem.cs" />
+    <Compile Include="Domain\BsLocation.cs" />
+    <Compile Include="Domain\BsMealType.cs" />
+    <Compile Include="Domain\BsNation.cs" />
+    <Compile Include="Domain\BsNursingGrade.cs" />
+    <Compile Include="Domain\BsPatient.cs" />
+    <Compile Include="Domain\BsRelation.cs" />
+    <Compile Include="Domain\BsUnit.cs" />
+    <Compile Include="Domain\BsUsage.cs" />
+    <Compile Include="Domain\BsUser.cs" />
+    <Compile Include="Domain\BsUserLevel.cs" />
+    <Compile Include="Domain\BsUserLocation.cs" />
+    <Compile Include="Domain\BsUserRole.cs" />
+    <Compile Include="Domain\GblRole.cs" />
+    <Compile Include="Domain\InAdviceLong.cs" />
+    <Compile Include="Domain\InAdviceTemp.cs" />
+    <Compile Include="Domain\InBodyHeat.cs" />
+    <Compile Include="Domain\InExecute.cs" />
+    <Compile Include="Domain\InHosInfo.cs" />
+    <Compile Include="Domain\InInvoice.cs" />
+    <Compile Include="Domain\InInvoiceDtl.cs" />
+    <Compile Include="Domain\Mapping\InInvoiceDtlMap.cs" />
+    <Compile Include="Domain\Mapping\InInvoiceMap.cs" />
+    <Compile Include="Domain\Mapping\BsCountryMap.cs" />
+    <Compile Include="Domain\Mapping\BsDocLevelMap.cs" />
+    <Compile Include="Domain\Mapping\BsDoctorMap.cs" />
+    <Compile Include="Domain\Mapping\BsFrequencyMap.cs" />
+    <Compile Include="Domain\Mapping\BsItemMap.cs" />
+    <Compile Include="Domain\Mapping\BsLocationMap.cs" />
+    <Compile Include="Domain\Mapping\BsMealTypeMap.cs" />
+    <Compile Include="Domain\Mapping\BsNationMap.cs" />
+    <Compile Include="Domain\Mapping\BsNursingGradeMap.cs" />
+    <Compile Include="Domain\Mapping\BsPatientMap.cs" />
+    <Compile Include="Domain\Mapping\BsRelationMap.cs" />
+    <Compile Include="Domain\Mapping\BsUnitMap.cs" />
+    <Compile Include="Domain\Mapping\BsUsageMap.cs" />
+    <Compile Include="Domain\Mapping\BsUserLevelMap.cs" />
+    <Compile Include="Domain\Mapping\BsUserLocationMap.cs" />
+    <Compile Include="Domain\Mapping\BsUserMap.cs" />
+    <Compile Include="Domain\Mapping\BsUserRoleMap.cs" />
+    <Compile Include="Domain\Mapping\BsPatientMap.extension.cs" />
+    <Compile Include="Domain\Mapping\GblRoleMap.cs" />
+    <Compile Include="Domain\Mapping\InAdviceLongMap.cs" />
+    <Compile Include="Domain\Mapping\InAdviceTempMap.cs" />
+    <Compile Include="Domain\Mapping\InBodyHeatMap.cs" />
+    <Compile Include="Domain\Mapping\InExecuteMap.cs" />
+    <Compile Include="Domain\Mapping\InHosInfoMap.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CHCIS_P_Context.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
